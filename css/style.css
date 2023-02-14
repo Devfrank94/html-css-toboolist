@@ -3,3 +3,69 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: rgb(240, 247, 255);
+}
+
+/* logo e titolo */
+header{
+  background-color: white;
+  margin-bottom: 40px;
+}
+
+header img{
+  padding: 9px 9px 9px 12px;
+  vertical-align: middle;
+}
+
+#title-logo{
+  font-size: 2.2rem;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+/* button task e section */
+.headbutton{
+  border-radius: 5px 5px 0 0;
+  width: 80%;
+  height: 45px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 2px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+}
+
+.btn-blue, .btn-white{
+  display: inline;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: inline;
+}
+
+.btn-blue{
+  color: white;
+  background-color: rgb(11, 163, 228);
+  border: 2px solid rgb(11, 163, 228);
+}
+
+.btn-white{
+  color: lightgray;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid lightgray;
+}
+
+/* container todolist */
+.todolist{
+  width: 80%;
+  height: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius:0 0 5px 5px;
+}
