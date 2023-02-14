@@ -64,7 +64,7 @@ header img{
 /* container todolist */
 .todolist{
   width: 80%;
-  height: 800px;
+  height: 700px;
   margin: 0 auto;
   background-color: white;
   border-radius:0 0 5px 5px;
@@ -147,8 +147,8 @@ li{
   background-color: rgb(55, 188, 153);
 }
 .magenta{
-  background-color: rgb(224, 48, 227);
+  background-color: rgb(233, 94, 214);
 }
 .lightgreen{
-  background-color: rgb(163, 237, 15);
+  background-color: rgb(132, 183, 29);
 }
