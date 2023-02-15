@@ -17,70 +17,79 @@
 
   <main>
     <div class="headbutton">
-      <div class="btn-blue">Add Task</div>
-      <div class="btn-white">Add Section</div>
+      <button class="btn btn-blue">Add Task</button>
+      <button class="btn btn-empty">Add Section</button>
     </div>
 
     <!-- to do list -->
     <div class="todolist">
-      <div class="newtask">
-        <h2>&#9662;New Task</h2>
-        <span class="check">&#10003;</span>
-        <h3>Quarterly Newsletter</h3>
-        <span class="label blue">Editorial</span>
-      </div>
 
-      <div class="today">
-        <h2>&#9662;Today</h2>
-          <div class="row-list">
-            <span class="check">&#10003;</span>
-            <li>Recruiting blog post</li>
-            <span class="label blue">Editorial</span>
-          </div>
-          <div class="row-list">
-            <span class="check">&#10003;</span>
-            <li>Mobile app launch</li>
-            <span class="label violet">Q1 Goals</span>
-          </div>
-          <div class="row-list">
-            <span class="cross">&#10007;</span>
-            <li>Interview John H.</li>
-            <span class="label teal">Recruiting</span>
-          </div>
-          <div class="row-list">
-            <span class="check">&#10003;</span>
-            <li>Summit update to mobile storefronts</li>
-            <span class="label orange">Mobile</span>
-          </div>
-      </div>
-
-      <div class="upcoming">
-        <h2>&#9662;Upcoming</h2>
-          <div class="row-list">
-            <span class="cross">&#10007;</span>
-            <li>Schedule meeting with Alex</li>
-          </div>
-          <div class="row-list">
-            <span class="check">&#10003;</span>
-            <li>Homepage refresh</li>
-            <span class="label magenta">Website</span>
-          </div>
-          <div class="row-list">
-            <span class="check">&#10003;</span>
-            <li>Onboard new Sales team members</li>
-            <span class="label lightgreen">Sales</span>
-          </div>
-          <div class="row-list">
-            <span class="check">&#10003;</span>
-            <li>Summit update to mobile storefronts</li>
-            <span class="label blue">Editorial</span>
-          </div>
+      <div class="task">
+        <ul>
+          <li>
+            <h3>New Task</h3>
+            <ul>
+              <li>
+                <span class="circle check"></span>
+                <span class="text">Quarterly Newsletter</span>
+                <span class="label blue"></span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Today</h3>
+            <ul>
+              <li>
+                <span class="circle check"></span>
+                <span class="text">Recruiting blog post</span>
+                <span class="label blue"></span>
+              </li>
+              <li>
+                <span class="circle check"></span>
+                <span class="text">Mobile app launch</span>
+                <span class="label violet"></span>
+              </li>
+              <li>
+                <span class="circle cross"></span>
+                <span class="text">Interview John H.</span>
+                <span class="label teal"></span>
+              </li>
+              <li>
+                <span class="circle check"></span>
+                <span class="text">Summit update to mobile storefronts</span>
+                <span class="label orange"></span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Upcoming</h3>
+            <ul>
+              <li>
+                <span class="circle cross"></span>
+                <span class="text">Schedule meeting with Alex</span>
+              </li>
+              <li>
+                <span class="circle check"></span>
+                <span class="text">Homepage refresh</span>
+                <span class="label magenta"></span>
+              </li>
+              <li>
+                <span class="circle check"></span>
+                <span class="text">Onboard new Sales team members</span>
+                <span class="label lightgreen"></span>
+              </li>
+              <li>
+                <span class="circle check"></span>
+                <span class="text">Review editorial calendar</span>
+                <span class="label blue"></span>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </main>
   <!-- /to do list -->
-
-
   
 </body>
 </html>

@@ -6,7 +6,6 @@
 
 body{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
   background-color: rgb(240, 247, 255);
 }
 
@@ -40,25 +39,24 @@ header img{
   padding-left: 40px;
 }
 
-.btn-blue, .btn-white{
-  display: inline;
+.btn{
   font-size: 12px;
-  text-align: center;
   border-radius: 5px;
+  border: none;
   padding: 5px 10px;
-  display: inline;
+  cursor: pointer;
 }
 
 .btn-blue{
   color: white;
   background-color: rgb(11, 163, 228);
-  border: 2px solid rgb(11, 163, 228);
+  border: 1px solid rgb(11, 163, 228);
 }
 
-.btn-white{
+.btn-empty{
   color: lightgray;
   background-color: rgb(255, 255, 255);
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
 }
 
 /* container todolist */
@@ -76,79 +74,79 @@ header img{
 }
 
 /* stile elementi to do list */
-h2{
-  margin-bottom: 10px;
+
+.task ul{
+  list-style: none;
 }
 
-.newtask, .today, .Upcoming{
-  margin-bottom: 40px;
+.task ul li h3, .task ul li{
+  margin-bottom: 30px;
 }
 
-.check{
+.task ul li h3::before{
+  content: '\25BE';
+}
+
+li .circle::before{
+  display: inline-block;
+  text-align: center;
+  line-height: 15px;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+li .check.circle::before{
+
   color: green;
   border: 1px solid green;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 50%;
-  margin-right: 10px;
+  content: '\2713';
+
 }
 
-.cross{
+li .cross.circle::before{
   color: red;
   border: 1px solid red;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 50%;
-  margin-right: 10px;
+  content: '\2715';
 }
 
-h3{
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.label{
-  color: white;
-  font-size: 8px;
-  text-align: center;
-  border-radius: 8px;
-  padding: 7px 10px;
-  display: inline;
-}
-
-.row-list{
-  margin-bottom: 20px;
-}
-
-li{
-  list-style: none;
-  display: inline-block;
-  vertical-align: middle;
+.text{
   font-size: 16px;
 }
 
+.label::after{
+  color: white;
+  margin-left: 5px;
+  font-size: 9px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 7px 10px;
+}
+
 /* stile colore etichette */
-.blue{
+.blue::after{
   background-color: rgb(11, 163, 228);
+  content: 'Editorial';
 }
-.violet{
+.violet::after{
   background-color: rgb(156, 87, 177);
+  content: 'Q1 Goals';
 }
-.orange{
+.orange::after{
   background-color: orange;
+  content: 'Mobile';
 }
-.teal{
+.teal::after{
   background-color: rgb(55, 188, 153);
+  content: 'Recruiting';
 }
-.magenta{
+.magenta::after{
   background-color: rgb(233, 94, 214);
+  content: 'Website';
 }
-.lightgreen{
+.lightgreen::after{
   background-color: rgb(132, 183, 29);
+  content: 'Sales';
 }
